@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: rgb(68, 67, 67);
+    --text-base: 1.8rem;
+    --text-xl:3rem;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    color: var(--main-color);
+    font-size: var(--text-base);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    gap: 3rem;
+}
+.input-el h1{
+    margin-bottom: 3rem;
+    font-size: var(--text-xl);
+}
+label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.instruction{
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+.instruction span{
+    font-weight: bold;
+}
+.btn{
+    padding: 1rem 2rem;
+    font-size: var(--text-base);
+    border-radius: 4px;
+    border: none;
+    background-color: #333;
+    color: #f2f2f2;
+    display: block;
+    margin-top: 1rem;
+    transition: box-shadow .3s;
+}
+.btn:hover{
+    box-shadow: 0 8px 2.4rem rgba(0, 0, 0, .1);
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.textbox{
+    min-width: 100%;
+    max-width: 300px;
+    min-height: 30rem;
+    max-height: 30rem;
+    font-size: var(--text-base);
+    padding: 1rem;
+}
+@media screen and (max-width:780px) {
+    .row{
+        grid-template-columns: 1fr;
+    }
+}

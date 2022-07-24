@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="input-el">
+          <div>
+            <h1>List Should be seperated by?</h1>
+            <label for="newLine">
+              <input type="radio" name="radio" id="newLine" />
+              <span>New Line</span>
+            </label>
+            <label for="spaces">
+              <input type="radio" name="radio" id="spaces" />
+              <span>Spaces</span>
+            </label>
+            <label for="comma">
+              <input type="radio" name="radio" id="comma" checked />
+              <span>Comma(,)</span>
+            </label>
+
+            <p class="instruction">
+              Make sure you seperate your list with <span>comma</span>
+            </p>
+          </div>
+
+          <textarea
+            class="textbox"
+            placeholder="example: input=> eggs, fish, malt"
+          ></textarea>
+          <button class="btn">Generate List</button>
+        </div>
+        <div class="output-el">
+          <textarea
+            class="textbox"
+            placeholder="output=>
+
+<li>Eggs</li> 
+<li>Fish</li>
+<li>Malt</li>"
+            ></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
